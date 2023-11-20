@@ -17,10 +17,14 @@
  *   getStringLength('') => 0
  *   getStringLength() => 0
  *   getStringLength(null) => 0
- *   getStringLength(undefined) => 0
+ *   getStringLength(undefined) => 0 return typeof value === 'string' ? value.length : 0;
  */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
+
+function getStringLength(value) {
+  if (typeof value === 'string') {
+    return value.length;
+  }
+  return 0;
 }
 
 /**
