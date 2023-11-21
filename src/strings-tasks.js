@@ -67,9 +67,10 @@ function isString(value) {
  *   concatenateStrings('aa', 'bb') => 'aabb'
  *   concatenateStrings('aa', '') => 'aa'.
  *   concatenateStrings('', 'bb') => 'bb'
+ *  'val1' + 'val2'
  */
 function concatenateStrings(value1, value2) {
-  return value1 + value2;
+  return value1.concat(value2);
 }
 
 /**
